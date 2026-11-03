@@ -2,130 +2,300 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Mathieu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f4f0;
-            color: #252525;
-        }
+<title>Paul Mathieu | Portfolio</title>
 
-        header {
-            padding: 70px 10%;
-            background: #263b36;
-            color: white;
-        }
+<style>
+:root {
+    --turquoise: #209db3;
+    --grey: #858181;
+    --dark: #292929;
+    --light: #f7f7f6;
+}
 
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        header p {
-            color: #d5ded8;
-            font-size: 18px;
-        }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    background: white;
+    line-height: 1.6;
+}
 
-        main {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 0 25px;
-        }
+/* En-tête */
 
-        h2 {
-            margin-top: 45px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 10px;
-        }
+header {
+    padding: 65px 9% 45px;
+    background: var(--grey);
+    color: white;
+}
 
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 22px;
-        }
+header h1 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
 
-        .project {
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-        }
+header .subtitle {
+    font-size: 17px;
+    margin-top: 5px;
+    color: #f1eeee;
+}
 
-        .project h3 {
-            margin-top: 0;
-        }
+header .description {
+    margin-top: 24px;
+    font-size: 15px;
+    color: white;
+}
 
-        a {
-            color: #426b5b;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* Navigation */
 
-        a:hover {
-            text-decoration: underline;
-        }
+nav {
+    padding: 17px 9%;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
-        footer {
-            text-align: center;
-            padding: 35px;
-            color: #777;
-        }
-    </style>
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--turquoise);
+}
+
+/* Contenu */
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 35px 35px 70px;
+}
+
+h2 {
+    color: var(--turquoise);
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid var(--turquoise);
+    padding-bottom: 8px;
+}
+
+.intro {
+    max-width: 750px;
+    color: #555;
+}
+
+/* Galerie */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit, minmax(260px, 1fr)
+    );
+    gap: 25px;
+}
+
+.project {
+    background: var(--light);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: translateY(-4px);
+}
+
+.project img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.project p {
+    color: #666;
+    font-size: 14px;
+}
+
+.category {
+    color: var(--turquoise);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.project a {
+    color: var(--turquoise);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Contact */
+
+#contact {
+    margin-top: 60px;
+    padding: 25px;
+    background: var(--light);
+}
+
+#contact a {
+    color: var(--turquoise);
+    text-decoration: none;
+}
+
+/* Pied de page */
+
+footer {
+    background: var(--grey);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 45px 7%;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 16px;
+        padding: 15px 7%;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Mathieu — Portfolio</h1>
-    <p>Projets d'ingénierie, construction et réalisations personnelles</p>
-    <p>Étudiant à l'École nationale des ponts et chaussées</p>
+    <h1>PAUL MATHIEU</h1>
+
+    <div class="subtitle">
+        Élève ingénieur — Génie Civil, Structures et Géotechnique | ENPC
+    </div>
+
+    <div class="description">
+        Projets d'ingénierie, constructions et réalisations personnelles.
+    </div>
 </header>
+
+<nav>
+    <a href="#projets">PROJETS</a>
+    <a href="#realisations">RÉALISATIONS</a>
+    <a href="#contact">CONTACT</a>
+    <a href="CV Francais.pdf">MON CV</a>
+</nav>
 
 <main>
 
-    <h2>À propos</h2>
-    <p>
-        Étudiant ingénieur, je m'intéresse à la conception,
-        à la construction et aux sciences de l'ingénieur.
-        Vous trouverez ici une sélection de mes projets et réalisations.
-    </p>
+<section id="projets">
+    <h2>PROJETS D'INGÉNIERIE</h2>
 
-    <h2>Mes projets</h2>
+    <p class="intro">
+        Une sélection de projets académiques réalisés au cours
+        de ma formation d'ingénieur à l'École nationale des
+        ponts et chaussées.
+    </p>
 
     <div class="projects">
 
-        <div class="project">
-            <h3>Projet 1 — Construction</h3>
-            <p>Présentation d'un projet de construction ou de rénovation.</p>
-            <a href="projets/projet1.pdf">Consulter le rendu →</a>
-        </div>
+        <article class="project">
+            <div class="project-content">
+                <div class="category">PROJET ACADÉMIQUE</div>
+                <h3>Projet 1</h3>
+                <p>Présentation du projet et de ses objectifs.</p>
+                <a href="#">Consulter le projet →</a>
+            </div>
+        </article>
 
-        <div class="project">
-            <h3>Projet 2 — Ingénierie</h3>
-            <p>Présentation d'un projet académique ou technique.</p>
-            <a href="projets/projet2.pdf">Consulter le rendu →</a>
-        </div>
-
-        <div class="project">
-            <h3>Projet 3 — Personnel</h3>
-            <p>Présentation d'une réalisation personnelle.</p>
-            <a href="projets/projet3.pdf">Consulter le rendu →</a>
-        </div>
+        <article class="project">
+            <div class="project-content">
+                <div class="category">MODÉLISATION</div>
+                <h3>Projet 2</h3>
+                <p>Présentation des méthodes et outils employés.</p>
+                <a href="#">Consulter le projet →</a>
+            </div>
+        </article>
 
     </div>
+</section>
 
-    <h2>Contact</h2>
-    <p>
-        <a href="mailto:ton.adresse@mail.com">Me contacter par email</a>
+<section id="realisations">
+    <h2>CONSTRUCTION & RÉALISATIONS</h2>
+
+    <p class="intro">
+        Travaux pratiques, chantiers et projets personnels
+        autour de la construction, du bois et de l'artisanat.
     </p>
+
+    <div class="projects">
+
+        <article class="project">
+            <div class="project-content">
+                <div class="category">CHARPENTE & RÉNOVATION</div>
+                <h3>Projet 3</h3>
+                <p>Présentation d'un chantier ou d'une réalisation.</p>
+                <a href="#">Découvrir →</a>
+            </div>
+        </article>
+
+        <article class="project">
+            <div class="project-content">
+                <div class="category">PROJET PERSONNEL</div>
+                <h3>Projet 4</h3>
+                <p>Description d'une réalisation personnelle.</p>
+                <a href="#">Découvrir →</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>CONTACT</h2>
+    <p>
+        Pour toute question ou échange autour de mes projets :
+    </p>
+    <a href="mailto:paul.mathieu@enpc.fr">
+        paul.mathieu@enpc.fr
+    </a>
+</section>
 
 </main>
 
 <footer>
-    Portfolio personnel — 2026
+    Paul Mathieu — Portfolio personnel — 2026
 </footer>
 
 </body>
