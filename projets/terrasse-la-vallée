@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrace in La Vallée — Paul Mathieu</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 950px;
+            margin: 60px auto;
+            padding: 0 25px;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #209DB3;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: #858181;
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #209DB3;
+            font-size: 19px;
+            margin-top: 35px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin: 35px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .gallery img:first-child {
+            grid-column: span 2;
+            height: 430px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 650px) {
+            body {
+                margin-top: 30px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery img:first-child {
+                grid-column: span 1;
+                height: 260px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a class="back" href="../index.html">← Back to portfolio</a>
+
+    <h1>Terrace in La Vallée</h1>
+    <div class="date">May 2023</div>
+
+    <p><strong>My first independent project for a client.</strong></p>
+
+    <h2>Requirements</h2>
+
+    <p>
+        A main terrace area of more than 50 m²;
+        a stepped, multi-level section on the right-hand side
+        to provide access to the garden;
+        decking boards running parallel to the wall.
+    </p>
+
+    <p>
+        The existing paved surface meant that the terrace
+        had to be built on adjustable pedestals.
+    </p>
+
+    <p>
+        The project went smoothly, despite the basic tools
+        I had available at the time.
+    </p>
+
+    <h2>Two main challenges</h2>
+
+    <ul>
+        <li>
+            The existing wall was not perfectly straight,
+            which made some of the cuts particularly tricky;
+        </li>
+        <li>
+            Natural rocks in the ground made the foundation
+            work more difficult; a hydraulic breaker proved
+            very useful in overcoming this issue.
+        </li>
+    </ul>
+
+    <p>A beautiful project, completed under a lovely sunny sky!</p>
+
+    <div class="gallery">
+        <img src="images/terrasse-1.jpg" alt="Terrace close-up">
+        <img src="images/terrasse-2.jpg" alt="Overall view of the terrace">
+    </div>
+
+</body>
+</html>
